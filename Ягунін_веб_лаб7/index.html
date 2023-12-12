@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            padding-left: 100px;
+            color: green;
+        }
+        .form__field{
+            padding: 10px;
+        }
+        .form__row{
+            display: flex;
+            flex-direction: row;
+        }
+        .form__field-name{
+            display: inline-block;
+            width: 200px;
+        }
+        .form__field--column{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Анкета</h1>
+        <form action="">
+            <ol>
+                <li class="form__field">
+                    <span class="form__field-name">Прізвище</span>
+                    <input type="text">
+                </li>
+                <li class="form__field">
+                    <span class="form__field-name">Ім'я по-батькові</span>
+                    <input type="text">
+                </li>
+                <li class="form__field">
+                    <span class="form__field-name">Число і рік народження</span>
+                    <input type="date">
+                </li>
+                <li class="form__field">
+                    <span class="form__field-name">Домашня адреса</span>
+                    <input type="text">
+                </li>
+                <li class="form__field">
+                    <span class="form__field-name">Місце навчання(роботи)</span>
+                    <input type="text">
+                </li>
+                <li class="form__field">
+                    <span class="form__field-name">Домашній(робочий) телефон</span>
+                    <input type="number">
+                </li>
+                <li class="form__field">
+                    <span class="form__field-name">E-mail</span>
+                    <input type="text">
+                </li>
+                <li class="form__field">
+                    <div class="form__row">
+                        <span class="form__field-name">Область наукових інтересів</span>
+                        <div class="form__field--column">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <div class="buttons">
+                <button type="reset">Відмінити введення</button>
+                <button type="submit">Надіслати дані та перейти до 2 етапу реєстрації</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

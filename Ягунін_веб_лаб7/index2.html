@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .form__fields{
+            display: flex;
+            flex-direction: column ;
+        }
+        ul{
+            list-style: none;
+        }
+        h3{
+            margin: 10px 0 0;
+        }
+        .comment{
+            width: 300px;
+            padding: 10px 5px;
+        }
+        .payway{
+            display: flex;
+            flex-direction: column;
+        }
+        .button{
+            margin-top: 15px;
+            width: fit-content;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <div class="form__fields">
+                <label>
+                    Введіть номер банківської карти
+                    <input type="number">
+                </label>
+                <label>
+                    Ваш id
+                    <input type="number">
+                </label>
+                <h3>Список товарів</h3>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="goods">
+                            Банани
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="goods">
+                            Яблука
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="goods">
+                            Апельсини
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="goods">
+                            Мандарини
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="goods">
+                            Гранат
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="goods">
+                            Ананас
+                        </label>
+                    </li>
+                </ul>
+                <label>
+                    Коментарі:
+                    <input class="comment" type="text">
+                </label>
+                <div class="payway">
+                    Вид оплати:
+                    <div>
+                        <label>
+                            Готівка
+                            <input type="radio" name="pay">
+                        </label>
+                        <label>
+                            Карта
+                            <input type="radio" name="pay">
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <label>
+                        Дані про залишок на рахунку
+                        <input type="checkbox">
+                    </label>
+                    <label>
+                        Список останніх виплат по рахунку
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <button class="button" type="submit">Підтвердити</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
