@@ -90,16 +90,16 @@ ul, ol {
   gap: 5px;
   width: 100%;
 }
-.block__heading {
+.blockheading {
   font-size: 20px;
   font-weight: 700;
 }
-.block__content {
+.blockcontent {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.block__command {
+.blockcommand {
   font-weight: 700;
 }
 
