@@ -1,0 +1,112 @@
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 16px;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 25px 15px;
+    background-color: rgb(34, 34, 34);
+}
+.container{
+    max-width: calc(1170px/1440px*100%);
+    margin: 0 auto;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    &__links{
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    &__autorization{
+        color: white;
+        border-bottom: 2px dotted white;
+    }
+}
+.best{
+    background-color: rgb(77, 77, 77);
+    padding: 10px;
+    &-cartoons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &__heading{
+            color: white;
+            font-size: 24px;
+        }
+        &__text{
+            color: rgb(46, 46, 46);
+        }
+    }
+    
+}
+.cartoons{
+    padding: 10px;
+    background-color: rgb(34, 34, 34);
+    box-shadow: 0px 10px 20px gray inset;
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__blocks{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__image{
+        width: 150px;
+        height: 300px;
+        
+    }
+    &__title{
+        color: gray;
+        opacity: 0.9;
+    }
+}
+.footer{
+    background-color: rgb(77, 77, 77);
+    padding: 30px 10px;
+    
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 300px;
+        color: white;
+        font-size: 20px;
+    }
+    &__news{
+        padding-right: 100px;
+    }
+    &__allnews{
+        
+        color: rgb(46, 46, 46);
+    }
+    &__comms{
+        padding-right: 150px;
+    }
+}
+.blue{
+    background-color: rgb(14, 64, 94);
+}
+
+
