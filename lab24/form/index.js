@@ -2,8 +2,8 @@
 const ReactCDNForm = () => {
     return (
       <div className="all">
-        <img src="./img/face.jpg" alt="Pasha" />
-        <h1>Ларін Павло</h1>
+        <img src="./img/face.jpg" alt="error" />
+        <h1>Ягунін Анатолій</h1>
         <Hobby />
         <CenteredDiv />
       </div>
