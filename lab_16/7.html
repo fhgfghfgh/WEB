@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragraph1">2</p>
+<p id="paragraph2">5</p>
+<p id="paragraph3">7</p>
+
+<script>
+var paragraph1 = document.getElementById("paragraph1");
+var paragraph2 = document.getElementById("paragraph2");
+var paragraph3 = document.getElementById("paragraph3");
+
+function displaySquare(event) {
+    var number = parseInt(event.target.textContent);
+    var square = number * number;
+    event.target.textContent = square;
+}
+
+paragraph1.addEventListener("click", displaySquare);
+paragraph2.addEventListener("click", displaySquare);
+paragraph3.addEventListener("click", displaySquare);
+</script>
+</body>
+</html>

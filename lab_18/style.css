@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#timer{
+    color: #ff0000;
+    font-size: 30px;
+}
+
+#restart-game{
+    height: 50px;
+    width: 200px;
+    background-color: #ff0000;
+}
+
+
+#start-game {
+    background-color: red;
+    width: 400px;
+    height: 50px;
+}
+
+#game-field {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 30px auto;
+    width: 300px;
+    border: solid red;
+    border-radius: 3%;
+}
+
+#game-field div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    cursor: pointer;
+    border: solid red;
+    border-radius: 3%;
+}
+
+#game-field .selected {
+    background-color: rgb(255, 107, 107);
+}
+
+#game-field .wrong {
+    background-color: rgb(255, 0, 0);
+}
+
+#result-table {
+    margin-top: 20px;
+}
+
+#result-table table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: rgb(255, 0, 0);
+}
+
+#result-table th, #result-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.best-result {
+    background-color: rgb(251, 255, 0);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .valid {
+            border: 1px solid green;
+        }
+        .invalid {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input1" data-length="5">
+<input type="text" id="input2" data-length="7">
+<input type="text" id="input3" data-length="10">
+
+<script>
+var input1 = document.getElementById("input1");
+var input2 = document.getElementById("input2");
+var input3 = document.getElementById("input3");
+
+function validateInput(event) {
+    var value = event.target.value;
+    var maxLength = parseInt(event.target.getAttribute("data-length"));
+
+    if (value.length === maxLength) {
+        event.target.classList.remove("invalid");
+        event.target.classList.add("valid");
+    } else {
+        event.target.classList.remove("valid");
+        event.target.classList.add("invalid");
+    }
+}
+
+input1.addEventListener("blur", validateInput);
+input2.addEventListener("blur", validateInput);
+input3.addEventListener("blur", validateInput);
+</script>
+</body>
+</html>

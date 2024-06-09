@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://example.com" id="link1">Link 1</a>
+<a href="https://example.org" id="link2">Link 2</a>
+<a href="https://example.net" id="link3">Link 3</a>
+
+<script>
+var link1 = document.getElementById("link1");
+var link2 = document.getElementById("link2");
+var link3 = document.getElementById("link3");
+
+function handleMouseOver(event) {
+    var href = event.target.getAttribute("href");
+    event.target.textContent += " (" + href + ")";
+    event.target.removeEventListener("mouseover", handleMouseOver);
+}
+
+function handleMouseOut(event) {
+    var originalText = event.target.textContent.split(" (")[0];
+    event.target.textContent = originalText;
+}
+
+link1.addEventListener("mouseover", handleMouseOver);
+link1.addEventListener("mouseout", handleMouseOut);
+
+link2.addEventListener("mouseover", handleMouseOver);
+link2.addEventListener("mouseout", handleMouseOut);
+
+link3.addEventListener("mouseover", handleMouseOver);
+link3.addEventListener("mouseout", handleMouseOut);
+</script>
+</body>
+</html>

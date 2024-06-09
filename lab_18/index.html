@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game: Choose number</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="main-page">
+        <h1>Game: Choose number</h1>
+        <button id="start-game">Start Game</button>
+    </div>
+
+    <div id="game-page" style="display: none;">
+        <div id="timer">Time: 60</div>
+        <div id="game-field"></div>
+        <button id="restart-game">Restart</button>
+        <div id="result-table">
+            <h3>Stats:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tnumber</th>
+                        <th>Result (sec)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
